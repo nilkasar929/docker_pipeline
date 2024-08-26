@@ -8,7 +8,7 @@ app.get('/',(req:Request,res:Response)=>{
 });
 
 app.post('/login',(req:Request,res:Response)=>{
-    const {username,password} = req.body;
+    const username = req.body;
     res.send(`Hello ${username}`);
 
 })
